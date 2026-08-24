@@ -1,0 +1,221 @@
+%-------------------------
+% Resume in LaTeX (matches original PDF layout)
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.85in}
+\addtolength{\textheight}{1.9in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\linespread{0.94}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\footnotesize{
+    #1 \vspace{-2pt}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \footnotesize{#2} \\
+      \textit{\footnotesize#3} & \textit{\footnotesize #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \footnotesize#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Mohammed Amr} \\ \vspace{2pt}
+    \small
+    mohammedamr200497@gmail.com $|$
+    +20 110 135 2017 $|$
+    \href{https://www.linkedin.com/in/mohammed-amr-abd-elsayed}{in/mohammed-amr-abd-elsayed} $|$
+    \href{https://github.com/MohammedAmr04}
+    {github.com/MohammedAmr04} $|$
+    % \href{https://bassanthossam.pages.dev}{bassanthossam.pages.dev} 
+    Cairo, Egypt
+    Software Engineer $|$ Frontend Developer
+\end{center}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\footnotesize{Frontend Developer with 1+ year of experience building responsive and scalable web applications using \textbf{React.js}, \textbf{Next.js}, and \textbf{TypeScript}. Experienced in developing production-ready \textbf{healthcare applications}, including patient booking systems and medical administrative dashboards, as well as business applications such as a \textbf{POS system used by 5+ customers}. Skilled in API integration, translating complex business requirements and designs into clean, maintainable interfaces, and building reusable components. Focused on application performance, scalability, and delivering reliable user experiences across real-world products.}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+\resumeSubheading
+  {EvyX}{Jan 2026 -- Present}
+  {Front-End Developer}{Onsite -- Nasr City, Cairo}
+  \resumeItemListStart
+    \resumeItem{Developed and maintained production healthcare dashboards for \textbf{Tebbi}, contributing to Phase 2 through new features, reporting modules, bug fixes, and improvements across existing workflows.}
+    \resumeItem{Built frontend features for a \textbf{telemedicine doctors dashboard}, integrating the \textbf{Jitsi Meet SDK} to support real-time video consultations and related meeting workflows.}
+    \resumeItem{Developed \textbf{medical services tables and forms} for the Eyadat platform from the ground up as part of a collaborative development team.}
+    \resumeItem{Identified recurring UI patterns and extracted them into \textbf{reusable components}, improving consistency and reducing duplicated frontend implementation across the application.}
+    \resumeItem{Worked with \textbf{Next.js, React, TypeScript, TanStack Query, Tailwind CSS, shadcn/ui, React Hook Form, and Zod} to build maintainable and responsive healthcare interfaces.}
+  \resumeItemListEnd
+  
+  \vspace{4px}
+  
+\resumeSubheading
+  {Buguard}{Jul 2025 -- Oct 2025}
+  {Front-End Developer Intern}{Remote -- Maadi, Cairo}
+  \resumeItemListStart
+    \resumeItem{Developed responsive internal administrative dashboards using \textbf{Next.js, React, and TypeScript}, translating \textbf{Figma designs} into production-ready interfaces.}
+    \resumeItem{Implemented key dashboard features including \textbf{authentication, tables, pagination, filtering, search, charts, and forms} across multiple workflows.}
+    \resumeItem{Built reusable UI components to improve consistency and maintainability across dashboard features and accelerate frontend development.}
+    \resumeItem{Collaborated within an Agile development workflow through daily \textbf{stand-up meetings}, task planning, progress updates, and team coordination.}
+  \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------GRADUATION PROJECT-----------
+% \section{Graduation Project}
+%   \resumeSubHeadingListStart
+
+%     \resumeSubheading
+%       {Kalamna -- AI-Powered Customer Support service for Arabic businesses}{Aug 2025 -- Jun 2026}
+%       {\textbf{Live:} \href{https://kalamna.tech}{kalamna.tech} \& Dashboard}{Grade: A+}
+%       \resumeItemListStart
+%         \resumeItem{\textbf{Team Lead} of 6 (backend, frontend, AI, DevOps); architected full backend with FastAPI, PostgreSQL + pgvector, Redis, Docker, GitHub Actions CI/CD, implemented auth, RBAC, employee management, analytics, WebSocket workflows, and real-time chat history}
+%         \resumeItem{Refactored AI pipeline into production RAG architecture to reduce token usage by \textbf{70\%} and latency by \textbf{50\%}; integrated our emotion detection model, Qwen fallback via Hugging Face, and built frontend (landing page, docs portal, dashboard) with full backend integration, and widget integration using AI-assisted tools (Codex, Claude Code, Copilot)}
+%       \resumeItemListEnd
+
+%   \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+ \resumeProjectHeading
+  {\textbf{POS System — Independent Commercial Product} $|$ \emph{Next.js, React, TypeScript, .NET}}
+  {}
+  % {\textcolor{blue}{API Docs}}
+\resumeItemListStart
+  \resumeItem{Designed, developed, and deployed an offline-first POS product currently used in production by \textbf{5+ businesses}, covering product management, sales, invoicing, payments, reporting, and daily operational workflows.}
+  \resumeItem{Implemented complex pricing and unit management workflows supporting \textbf{retail/wholesale pricing, multiple selling units, unit conversion, unit-specific barcodes, line-level price overrides, and percentage/fixed discounts}.}
+  \resumeItem{Built a \textbf{role-based access control system} with backend-enforced permissions and custom roles, ensuring secure access to business operations and sensitive workflows.}
+  \resumeItem{Implemented native \textbf{ESC/POS thermal printing} with Arabic RTL and BiDi support, using a C\#/.NET backend with SQLite and Dapper for reliable offline-first operation.}
+\resumeItemListEnd
+\vspace{4px}
+\resumeProjectHeading
+  {\textbf{Toldio E-commerce Platform (Freelance Project)} $|$ \emph{Next.js, TypeScript, Node.js, MongoDB}}
+  {\href{https://market.tolido-group.com/}{\textit{Live}}}
+\resumeItemListStart
+  \resumeItem{Designed and developed a full-stack \textbf{multi-region e-commerce platform} supporting multiple countries, currencies, shipping regions, and bilingual \textbf{AR/EN} experiences.}
+  \resumeItem{Built an integrated \textbf{CRM and CMS} with role-based access control, dynamic content management, advanced product search, and optimized database queries.}
+  \resumeItem{Integrated \textbf{Cloudinary} for media management and \textbf{Google Analytics} for product analytics and user behavior tracking.}
+  \resumeItem{Containerized and deployed the platform to a \textbf{Hostinger VPS using Docker}, managing the application deployment and production environment independently.}
+\resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+\resumeSubheading
+  {B.Sc. in Computer Science (Information Systems)}{Sep 2021 -- Jun 2025}
+  {Helwan University, \textbf{Overall Grade:} Very Good}{Helwan, Cairo}
+  \resumeSubHeadingListEnd
+
+%-----------VOLUNTEERING-----------
+\section{Volunteering}
+  \resumeSubHeadingListStart
+
+\resumeSubheading
+  {Frontend Director / Technical Mentor IEEE FCAIH Student Activity}{Feb 2023 -- Oct 2025}
+  {}{}
+  \resumeItemListStart
+    \resumeItem{Progressed from a technical member to \textbf{Frontend Director}, leading the frontend track and coordinating tasks, learning activities, and technical development for team members.}
+    \resumeItem{Delivered \textbf{15+ technical sessions} covering React.js, modern frontend development, Git, and GitHub, supporting students throughout their learning journey.}
+    \resumeItem{Mentored students through \textbf{10+ projects}, providing code reviews, technical guidance, and feedback on development practices and project structure.}
+    \resumeItem{Organized and delivered a \textbf{4-session React.js workshop} attended by \textbf{25+ students}, introducing participants to practical frontend development workflows.}
+  \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+%-----------SKILLS-----------%
+\section{Skills}
+     \textbf{Frontend:} React.js, Next.js, TypeScript, JavaScript, React Query, React Hook Form, Zod, Redux, Redux Toolkit, Tailwind CSS, shadcn/ui, Ant Design, Bootstrap, HTML5, CSS3, Responsive Design 
+          \vspace{1pt}
+
+     \textbf{Backend \& Databases:} Node.js, C\#, .NET Framework, ASP.NET Web API, RESTful APIs, API Integration, JWT, Dapper, MongoDB, SQLite, Swagger/OpenAPI, Postman \\
+     \vspace{1pt}
+
+     \textbf{Tools \& Practices:} Git, GitHub, Docker, Vite, Agile/Scrum, Reusable Components, Problem Solving, Debugging
+ \vspace{-8pt}
+
+%-----------ARTICLES-----------
+% \section{Articles}
+%   \resumeSubHeadingListStart
+%     \resumeProjectHeading
+%       {\textbf{Implementing Google OAuth in Django REST Framework Without Third-Party Packages}}{\textcolor{blue}{Medium} $|$ Mar 13, 2025}
+%   \resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+% \section{Achievements \& Certifications}
+%  \begin{itemize}[leftmargin=0.0in, label={}]
+%     \footnotesize{\item{
+%      \begin{tabularx}{\textwidth}{@{}X X@{}}
+%      \textbf{ECPC Regional Finalist} -- 2024 & \textbf{PCAP} -- Certified Associate in Python Programming, 2024 \\[4pt]
+%      \textbf{CCNA} -- Cisco Certified Network Associate, 2023 & \textbf{ALX AiCE} -- Artificial Intelligence Career Essentials, 2024 \\[4pt]
+%      \textbf{Backend Vice-Lead} -- GDG BNU On Campus, 2025 & \textbf{Frontend Internship} -- Fotopia Technologies 2024 \\
+%      \end{tabularx}
+%     }}
+ % \end{itemize}
+
+\end{document}
